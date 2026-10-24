@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#908fa0", "tertiary-fixed-dim": "#bdc2ff", "primary-fixed-dim": "#c0c1ff", "surface-container-lowest": "#0e0e10", "on-primary-fixed-variant": "#2f2ebe", "surface-container-high": "#2a2a2c", "on-background": "#e5e1e4", "on-surface-variant": "#c7c4d7", "error-container": "#93000a", "background": "#131315", "surface-container": "#201f22", "surface-bright": "#39393b", "secondary-container": "#00a572", "on-secondary-fixed-variant": "#005236", "secondary-fixed": "#6ffbbe", "inverse-primary": "#494bd6", "on-primary": "#1000a9", "primary": "#c0c1ff", "on-error-container": "#ffdad6", "on-tertiary-fixed-variant": "#2f3aa3", "secondary-fixed-dim": "#4edea3", "surface": "#131315", "inverse-surface": "#e5e1e4", "primary-container": "#8083ff", "primary-fixed": "#e1e0ff", "on-error": "#690005", "surface-container-low": "#1c1b1d", "on-tertiary": "#131e8c", "on-surface": "#e5e1e4", "surface-container-highest": "#353437", "secondary": "#4edea3", "on-secondary": "#003824", "on-tertiary-fixed": "#000767", "on-secondary-container": "#00311f", "tertiary": "#bdc2ff", "tertiary-container": "#7c87f3", "tertiary-fixed": "#e0e0ff", "on-tertiary-container": "#081486", "on-primary-fixed": "#07006c", "inverse-on-surface": "#313032", "surface-variant": "#353437", "error": "#ffb4ab", "surface-dim": "#131315", "on-primary-container": "#0d0096", "on-secondary-fixed": "#002113", "outline-variant": "#464554", "surface-tint": "#c0c1ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-xs": "0.25rem", "margin-lg": "3.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "gutter-lg": "2rem", "gutter": "1rem", "gutter-md": "1.5rem", "margin-md": "2rem" }, "fontFamily": { "body-lg": ["Geist"], "body-md": ["Geist"], "label-md": ["Geist"], "body-sm": ["Geist"], "label-sm": ["Geist"], "headline-lg": ["Space Grotesk"], "headline-xl": ["Space Grotesk"], "headline-xl-mobile": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "title-lg": ["Space Grotesk"], "title-md": ["Space Grotesk"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.12em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-xl-mobile": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-lg": ["20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "500" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "500" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-40 bg-surface-container-lowest/95 backdrop-blur-xl border-b border-outline-variant/40"><div class="h-20 w-full px-margin-lg flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><img alt="Lumina Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXXGLmF4P1YRWe03_TzqMQgufAhUXdU1dpBA6fosYy0-psrps_7AGAAkh_KC7TbzrCW_y8DexQc9pAGcf2C4gEMig_B0kry63-As0h7WK2TKxtVw_7p2odRTZe2eIsbhtYIKyxG6WTG9_T66PvWxQk12Pu3kd-ryElyYJ1O9XdTB40E3T0zpG7536AkdHiYESsU3fwZV54XncqIZj86VsHh4TwFsBdCJilcSu3oEtdlBsJsoiarsOnYD4"/><span class="font-headline-md text-title-lg text-primary tracking-tight font-bold uppercase">Lumina</span></div><nav class="flex items-center gap-space-lg" data-active-classes="text-primary font-bold bg-surface-container-high px-space-sm py-space-xs rounded"><a class="text-on-surface-variant font-label-md text-label-md uppercase tracking-wider hover:text-on-surface transition-colors" data-path="home" href="#">Home / Shop</a><a class="text-on-surface-variant font-label-md text-label-md uppercase tracking-wider hover:text-on-surface transition-colors" data-path="categories" href="#">Categories</a><a class="text-on-surface-variant font-label-md text-label-md uppercase tracking-wider hover:text-on-surface transition-colors" data-path="deals" href="#">Deals</a><a class="text-on-surface-variant font-label-md text-label-md uppercase tracking-wider hover:text-on-surface transition-colors" data-path="orders" href="#">Orders</a></nav><div class="flex-1 max-w-md"><div class="relative flex items-center bg-surface-container-low border border-outline-variant px-space-sm py-space-xs"><span class="material-symbols-outlined text-outline text-title-md mr-space-xs">search</span><input class="w-full bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none placeholder:text-outline" placeholder="Search catalog, SKU, tech specs..." type="text"/><div class="flex items-center gap-space-xs ml-space-xs"><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant text-[10px] font-label-sm uppercase tracking-wide border border-outline-variant">Hardware</span><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant text-[10px] font-label-sm uppercase tracking-wide border border-outline-variant">Audio</span></div></div></div><div class="flex items-center gap-space-md"><button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-title-lg">favorite</span></button><button class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-high border border-outline-variant hover:border-primary text-on-surface transition-colors" onclick="document.getElementById('cart-drawer').classList.toggle('translate-x-full')" type="button"><span class="material-symbols-outlined text-title-md text-secondary">shopping_cart</span><span class="font-label-md text-label-md">Cart</span><span class="px-1.5 py-0.2 bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">2</span></button><div class="flex items-center gap-space-xs pl-space-xs border-l border-outline-variant"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtdmNhnAOH603x3X6Y-PpTmueqK-9TWz5n8JRZ8ml2cKxVLZXZfrviOfPHc1indygvbhhJWgIIbUs1IIy9U3tswkq5X7Z0_Zt15ct4eZADjSjr0p0EVocxodXH52k3VPLXlwPQrXyRaGEYngNQ-yvVaSZx-K7xMQl24At_munu20QDaJ5scmOLu8VAkK5k8qCvCaC-s5U0hXzQEZAcjf8Rj1pANA_3n701-utbDetCtkpz2FZkCbgY"/></div></div></div></header><div class="fixed inset-y-0 right-0 z-50 w-96 bg-surface-container-low border-l border-outline-variant shadow-[4px_4px_0px_0px_#000000] transform translate-x-full transition-transform duration-300 flex flex-col" id="cart-drawer"><div class="p-space-md border-b border-outline-variant flex items-center justify-between bg-surface-container"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary">shopping_bag</span><span class="font-headline-md text-title-md text-on-surface font-bold uppercase">Manifest Cart</span><span class="text-[11px] bg-secondary-container text-on-secondary-container px-1.5 py-0.5 font-bold">2 ITEMS</span></div><button class="text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('cart-drawer').classList.add('translate-x-full')"><span class="material-symbols-outlined">close</span></button></div><div class="flex-1 overflow-y-auto p-space-md space-y-space-md"><div class="p-space-sm bg-surface-container-lowest border border-outline-variant flex gap-space-sm"><div class="w-16 h-16 bg-surface-container flex items-center justify-center border border-outline-variant"><span class="material-symbols-outlined text-outline text-title-lg">headphones</span></div><div class="flex-1 flex flex-col justify-between"><div><div class="flex justify-between items-start"><span class="font-label-md text-label-md text-on-surface font-bold">Aether-9 Studio Headset</span><button class="text-outline hover:text-error"><span class="material-symbols-outlined text-title-md">delete</span></button></div><span class="font-body-sm text-body-sm text-on-surface-variant font-mono">$349.00</span></div><div class="flex items-center gap-space-xs mt-space-xs"><button class="w-6 h-6 flex items-center justify-center bg-surface-container border border-outline-variant text-on-surface hover:bg-surface-bright">-</button><span class="font-mono text-body-sm px-space-xs">1</span><button class="w-6 h-6 flex items-center justify-center bg-surface-container border border-outline-variant text-on-surface hover:bg-surface-bright">+</button></div></div></div><div class="p-space-sm bg-surface-container-lowest border border-outline-variant flex gap-space-sm"><div class="w-16 h-16 bg-surface-container flex items-center justify-center border border-outline-variant"><span class="material-symbols-outlined text-outline text-title-lg">keyboard</span></div><div class="flex-1 flex flex-col justify-between"><div><div class="flex justify-between items-start"><span class="font-label-md text-label-md text-on-surface font-bold">Apex Monolith Keyset</span><button class="text-outline hover:text-error"><span class="material-symbols-outlined text-title-md">delete</span></button></div><span class="font-body-sm text-body-sm text-on-surface-variant font-mono">$189.00</span></div><div class="flex items-center gap-space-xs mt-space-xs"><button class="w-6 h-6 flex items-center justify-center bg-surface-container border border-outline-variant text-on-surface hover:bg-surface-bright">-</button><span class="font-mono text-body-sm px-space-xs">1</span><button class="w-6 h-6 flex items-center justify-center bg-surface-container border border-outline-variant text-on-surface hover:bg-surface-bright">+</button></div></div></div></div><div class="p-space-md border-t border-outline-variant bg-surface-container space-y-space-xs font-mono text-body-sm"><div class="flex justify-between text-on-surface-variant"><span>Subtotal:</span><span class="text-on-surface font-bold">$538.00</span></div><div class="flex justify-between text-on-surface-variant"><span>Estimated Tax (8%):</span><span class="text-on-surface">$43.04</span></div><div class="flex justify-between text-on-surface-variant"><span>Calculated Shipping:</span><span class="text-secondary font-bold">FREE</span></div><div class="flex justify-between text-on-surface text-title-md font-bold pt-space-xs border-t border-outline-variant/60"><span>Total Telemetry:</span><span class="text-primary">$581.04</span></div><a class="block w-full text-center py-space-sm bg-primary text-on-primary font-headline-md text-body-md uppercase font-bold tracking-wider hover:bg-primary-container hover:text-on-primary-container transition-colors mt-space-sm border border-primary-fixed-dim" data-path="checkout" href="#">Proceed to Checkout</a></div></div><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full text-on-surface">
+<!-- Subtle Ambient Glow Canvas Decor -->
+<div class="relative w-full max-w-7xl mx-auto px-margin md:px-margin-lg py-space-lg">
+<!-- Breadcrumb & Telemetry Status Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg bg-surface-container-low p-space-md shadow-sm">
+<div class="flex items-center gap-space-sm text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-body-sm">arrow_back</span> Return to Manifest
+        </a>
+<span>/</span>
+<span class="text-secondary font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 bg-secondary inline-block animate-pulse"></span> Terminal 04: Secure Checkout
+        </span>
+</div>
+<div class="flex items-center gap-space-md text-label-sm font-label-sm uppercase tracking-wider text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-body-sm text-secondary">verified_user</span> 256-Bit TLS End-to-End</span>
+<span class="hidden sm:inline-block">|</span>
+<span class="hidden sm:flex items-center gap-1"><span class="material-symbols-outlined text-body-sm">sync_saved_locally</span> Local Session ID: #LM-9021</span>
+</div>
+</div>
+<!-- Main Two-Column Architectural Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- LEFT COLUMN: Checkout Sequential Pipeline (7 cols) -->
+<div class="lg:col-span-7 space-y-space-lg">
+<!-- STEP 1: Customer Contact & Student Verification -->
+<section class="bg-surface-container-low p-space-lg shadow-md relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container px-space-md py-space-xs -mx-space-lg -mt-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-md text-label-md bg-primary text-on-primary w-6 h-6 flex items-center justify-center font-bold">01</span>
+<h2 class="font-headline-md text-title-md uppercase tracking-wide text-on-surface">Recipient Identification</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm">fingerprint</span> Verified Session
+            </span>
+</div>
+<div class="space-y-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant flex justify-between" for="checkout-email">
+<span>Contact Email</span>
+<span class="text-primary text-[10px]">Required</span>
+</label>
+<div class="relative flex items-center bg-surface-container-lowest">
+<span class="material-symbols-outlined absolute left-3 text-outline text-title-md">alternate_email</span>
+<input class="w-full bg-transparent pl-10 pr-space-sm py-space-xs text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-high transition-colors" id="checkout-email" placeholder="alex@campus.edu" type="email" value="alex.chen@polytechnic.edu"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant flex justify-between" for="checkout-phone">
+<span>Mobile Telemetry</span>
+<span class="text-outline text-[10px]">For SMS Dispatch</span>
+</label>
+<div class="relative flex items-center bg-surface-container-lowest">
+<span class="material-symbols-outlined absolute left-3 text-outline text-title-md">phone_iphone</span>
+<input class="w-full bg-transparent pl-10 pr-space-sm py-space-xs text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-high transition-colors" id="checkout-phone" placeholder="+1 (000) 000-0000" type="tel" value="+1 (555) 839-2041"/>
+</div>
+</div>
+</div>
+<!-- College Student ID Discount Incentive Toggle -->
+<div class="p-space-sm bg-surface-container flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-title-md">school</span>
+</div>
+<div>
+<p class="font-label-md text-label-md uppercase font-bold text-on-surface">Campus Student / Academic Protocol</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Instant validation via accredited .edu credentials</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="student-toggle" onchange="toggleStudentIdInput()" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary after:border-gray-300 after:border after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Student ID Collapsible Field -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md bg-surface-container-lowest p-space-sm" id="student-id-field">
+<div class="md:col-span-2">
+<label class="font-label-sm text-label-sm uppercase text-secondary font-bold block mb-1">Campus ID / Badge Matrix</label>
+<input class="w-full bg-surface-container px-space-sm py-space-xs font-body-sm text-body-sm text-secondary font-mono focus:outline-none" type="text" value="UNIV-84920-POLY"/>
+</div>
+<div class="flex flex-col justify-end">
+<div class="flex items-center gap-1 text-secondary text-label-sm font-label-sm uppercase font-bold">
+<span class="material-symbols-outlined text-body-md">task_alt</span> Verified (25% Applied)
+                </div>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 2: Shipping Destination & Delivery Matrix -->
+<section class="bg-surface-container-low p-space-lg shadow-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container px-space-md py-space-xs -mx-space-lg -mt-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-md text-label-md bg-primary text-on-primary w-6 h-6 flex items-center justify-center font-bold">02</span>
+<h2 class="font-headline-md text-title-md uppercase tracking-wide text-on-surface">Fulfillment & Destination</h2>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-bright text-primary font-label-sm text-label-sm uppercase px-space-sm py-1 flex items-center gap-1 transition-colors" onclick="autofillShipping()" type="button">
+<span class="material-symbols-outlined text-body-sm">bolt</span> Auto-Fill Demo
+            </button>
+</div>
+<div class="space-y-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant" for="ship-name">Full Legal Name</label>
+<input class="w-full bg-surface-container-lowest px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-high" id="ship-name" type="text" value="Alex R. Chen"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant" for="ship-suite">Dorm / Suite / Lab Unit</label>
+<input class="w-full bg-surface-container-lowest px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-high" id="ship-suite" type="text" value="West Quad Tower 3, Suite #408"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant" for="ship-address">Street Physical Address</label>
+<input class="w-full bg-surface-container-lowest px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-high" id="ship-address" type="text" value="742 Evergreen Innovation Way"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant" for="ship-city">Campus / City</label>
+<input class="w-full bg-surface-container-lowest px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-high" id="ship-city" type="text" value="Cambridge"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant" for="ship-state">State / Region</label>
+<input class="w-full bg-surface-container-lowest px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-high" id="ship-state" type="text" value="MA"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant" for="ship-zip">Postal Code</label>
+<input class="w-full bg-surface-container-lowest px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface font-mono focus:outline-none focus:bg-surface-container-high" id="ship-zip" type="text" value="02138"/>
+</div>
+</div>
+<!-- Shipping Speed Selection Modules -->
+<div class="pt-space-sm">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant block mb-space-xs">Dispatch Protocols</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<label class="relative flex items-start gap-space-sm p-space-sm bg-surface-container-lowest cursor-pointer hover:bg-surface-container transition-colors has-[:checked]:bg-surface-container-high">
+<input checked="" class="mt-1 accent-primary" name="shipping-speed" onchange="updateShipping(0)" type="radio" value="0"/>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-0.5">
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">Campus Ground</span>
+<span class="font-label-md text-label-md uppercase text-secondary font-bold">FREE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Delivery within 2-3 academic cycles to mailroom locker</p>
+</div>
+</label>
+<label class="relative flex items-start gap-space-sm p-space-sm bg-surface-container-lowest cursor-pointer hover:bg-surface-container transition-colors has-[:checked]:bg-surface-container-high">
+<input class="mt-1 accent-primary" name="shipping-speed" onchange="updateShipping(4.99)" type="radio" value="4.99"/>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-0.5">
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">Priority Express</span>
+<span class="font-label-md text-label-md uppercase text-primary font-bold font-mono">+$4.99</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Next-morning direct locker courier dispatch with tracking</p>
+</div>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 3: Payment Node & Interactive Card Emulator -->
+<section class="bg-surface-container-low p-space-lg shadow-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container px-space-md py-space-xs -mx-space-lg -mt-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-md text-label-md bg-primary text-on-primary w-6 h-6 flex items-center justify-center font-bold">03</span>
+<h2 class="font-headline-md text-title-md uppercase tracking-wide text-on-surface">Encrypted Settlement</h2>
+</div>
+<div class="flex items-center gap-1 text-outline font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-body-sm">lock</span> PCI-DSS Tier 1
+            </div>
+</div>
+<!-- Payment Tabs -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs mb-space-md">
+<button class="py-space-xs px-space-sm font-label-md text-label-md uppercase font-bold bg-primary text-on-primary flex items-center justify-center gap-1 transition-colors" id="tab-card" onclick="setPaymentTab('card')" type="button">
+<span class="material-symbols-outlined text-body-md">credit_card</span> Card
+            </button>
+<button class="py-space-xs px-space-sm font-label-md text-label-md uppercase font-bold bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1 transition-colors" id="tab-apple" onclick="setPaymentTab('apple')" type="button">
+<span class="material-symbols-outlined text-body-md">phone_iphone</span> Apple Pay
+            </button>
+<button class="py-space-xs px-space-sm font-label-md text-label-md uppercase font-bold bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1 transition-colors" id="tab-paypal" onclick="setPaymentTab('paypal')" type="button">
+<span class="material-symbols-outlined text-body-md">account_balance_wallet</span> PayPal
+            </button>
+<button class="py-space-xs px-space-sm font-label-md text-label-md uppercase font-bold bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1 transition-colors" id="tab-cash" onclick="setPaymentTab('cash')" type="button">
+<span class="material-symbols-outlined text-body-md">payments</span> Campus COD
+            </button>
+</div>
+<!-- CREDIT CARD CONTENT -->
+<div class="space-y-space-md" id="payment-card-panel">
+<!-- Neo-Brutalist Hardware Payment Card Preview -->
+<div class="w-full bg-gradient-to-tr from-surface-container-lowest via-surface-container to-surface-container-high p-space-md shadow-lg relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-5 bg-tertiary-container/30 inline-block"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-mono">EMV CHIP</span>
+</div>
+<div class="font-headline-md text-title-md font-bold tracking-wider text-primary italic">LUMINA PAY</div>
+</div>
+<div class="mb-space-md">
+<span class="text-outline text-label-sm font-label-sm block uppercase tracking-widest mb-1">Card Encrypted Telemetry</span>
+<span class="font-headline-md text-title-lg tracking-widest text-on-surface font-mono" id="preview-card-num">4242 •••• •••• 9012</span>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase tracking-widest">Cardholder Node</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold" id="preview-card-name">ALEX R. CHEN</span>
+</div>
+<div class="text-right">
+<span class="text-outline text-label-sm font-label-sm block uppercase tracking-widest">Expires</span>
+<span class="font-mono text-body-md text-secondary font-bold" id="preview-card-exp">09/28</span>
+</div>
+</div>
+</div>
+<!-- Card Inputs Form -->
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant flex justify-between" for="card-number">
+<span>Primary Account Number (PAN)</span>
+<span class="text-secondary font-mono text-[11px] flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm">check_circle</span> Visa / Master Verified
+                  </span>
+</label>
+<div class="relative flex items-center bg-surface-container-lowest">
+<span class="material-symbols-outlined absolute left-3 text-outline text-title-md">credit_card</span>
+<input class="w-full bg-transparent pl-10 pr-space-sm py-space-xs font-mono text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-high" id="card-number" maxlength="19" oninput="formatCardNumber(this)" type="text" value="4242 8820 9940 9012"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant" for="card-expiry">Expiration Index</label>
+<input class="w-full bg-surface-container-lowest px-space-sm py-space-xs font-mono text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-high" id="card-expiry" maxlength="5" oninput="formatExpiry(this)" placeholder="MM/YY" type="text" value="09/28"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant flex justify-between" for="card-cvv">
+<span>CVV / CVC</span>
+<span class="material-symbols-outlined text-body-sm text-outline" title="3-digit security code on back">help</span>
+</label>
+<div class="relative flex items-center bg-surface-container-lowest">
+<span class="material-symbols-outlined absolute left-3 text-outline text-title-md">lock</span>
+<input class="w-full bg-transparent pl-10 pr-space-sm py-space-xs font-mono text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-high" id="card-cvv" maxlength="4" placeholder="***" type="password" value="882"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ALT TABS: Fallback Screens -->
+<div class="hidden p-space-lg bg-surface-container-lowest text-center space-y-space-sm" id="payment-alt-panel">
+<span class="material-symbols-outlined text-headline-xl text-secondary">contactless</span>
+<p class="font-headline-md text-title-lg text-on-surface font-bold" id="alt-tab-title">Fast-Track Checkout</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mx-auto" id="alt-tab-desc">Authorize one-touch biometrics directly with your campus credential provider or hardware passkey.</p>
+<button class="mt-space-sm px-space-lg py-space-xs bg-primary text-on-primary font-headline-md text-label-md uppercase font-bold tracking-wider hover:bg-primary-container hover:text-on-primary-container transition-colors" type="button">Launch External Auth</button>
+</div>
+<!-- Promo Code Input Matrix -->
+<div class="mt-space-lg pt-space-md bg-surface-container p-space-sm">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant block mb-1" for="promo-input">Authorization / Promo Voucher</label>
+<div class="flex gap-space-xs">
+<div class="relative flex-1 bg-surface-container-lowest">
+<span class="material-symbols-outlined absolute left-3 top-2 text-outline text-title-md">sell</span>
+<input class="w-full bg-transparent pl-10 pr-space-sm py-space-xs font-mono text-body-sm uppercase text-on-surface focus:outline-none" id="promo-input" type="text" value="CAMPUS25"/>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md uppercase px-space-md py-space-xs font-bold transition-colors" onclick="applyPromoCode()" type="button">Apply</button>
+</div>
+<!-- Applied Badge -->
+<div class="mt-space-xs flex items-center justify-between p-1.5 bg-secondary/10" id="promo-badge">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-body-md">verified</span>
+<span class="font-mono text-body-sm text-secondary font-bold">CAMPUS25 APPLIED (-25% Academic Discount)</span>
+</div>
+<button class="text-outline hover:text-error text-label-sm font-label-sm uppercase underline" onclick="removePromoCode()" type="button">Revoke</button>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN: Live Order Summary & Real-time Math Pipeline (5 cols) -->
+<div class="lg:col-span-5 sticky top-24 space-y-space-md">
+<div class="bg-surface-container-low p-space-lg shadow-xl relative">
+<!-- Geometric Top Border Line -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-tertiary"></div>
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container px-space-md py-space-xs -mx-space-lg -mt-space-lg">
+<h2 class="font-headline-md text-title-md uppercase tracking-wide text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">inventory_2</span> Manifest Summary
+            </h2>
+<span class="font-mono text-label-sm bg-surface-container-highest px-2 py-0.5 text-on-surface-variant font-bold" id="summary-item-count">3 ACTIVE ITEMS</span>
+</div>
+<!-- Cart Line Items with Real-time Interactive Qty Adjusters -->
+<div class="space-y-space-md pb-space-md">
+<!-- Item 1: Aura Pro ANC Headphones -->
+<div class="p-space-sm bg-surface-container-lowest flex gap-space-sm items-start relative group">
+<div class="w-16 h-16 bg-surface-container flex-shrink-0 flex items-center justify-center relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High-end matte obsidian over-ear noise-cancelling headphones resting on a minimalist dark stone plinth in a futuristic design laboratory with subtle indigo LED rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_byZPWpnUvUfRsrMCah_7wv5oBrZW7Cmy6XDSERLKUP6VkO69PVfx414X0gVl7yxHHSNzGy_TZdrVbHj-qmDiLU3rrXSOyS5V2QL4rsvYQHwOIIVn_RhTe5NcPSBIHvej-lag1VLN93u3o55uFbUznGIwu7rRTr_FVnPrgXJJn-P8WNPxNMGFJKtWY9otPSDiS9SvVOaAOIaZJKcxZ4-1ReCxfVpA_hDatg19-RSxKMHr2QZagGr4"/>
+<span class="absolute bottom-0 right-0 bg-surface-container-highest text-[9px] font-mono px-1 text-on-surface-variant">LUM-01</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-body-md font-bold text-on-surface truncate">Aura Pro ANC Headphones</h3>
+<button class="text-outline hover:text-error transition-colors p-0.5" onclick="removeItem(1)" type="button">
+<span class="material-symbols-outlined text-body-md">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Matte Graphite / Gen-3 Drivers</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center bg-surface-container">
+<button class="w-6 h-6 flex items-center justify-center text-on-surface hover:bg-surface-bright font-mono" onclick="adjustQty(1, -1)" type="button">-</button>
+<span class="font-mono text-body-sm px-2 text-primary font-bold" id="qty-1">1</span>
+<button class="w-6 h-6 flex items-center justify-center text-on-surface hover:bg-surface-bright font-mono" onclick="adjustQty(1, 1)" type="button">+</button>
+</div>
+<span class="font-mono text-body-md font-bold text-on-surface" id="price-1">$129.99</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Nordic Wool Desk Mat -->
+<div class="p-space-sm bg-surface-container-lowest flex gap-space-sm items-start relative group">
+<div class="w-16 h-16 bg-surface-container flex-shrink-0 flex items-center justify-center relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Dark charcoal heathered felt desk mat laid flat on a sleek black workstation with high precision mechanical keyboard edge visible in soft moody atmospheric studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOcmIId8pkM7EwLopv4QkXjfExFb0qSs_3eLrVYjTX59xSgwaZChPjEAUW5GDaVq7_70RTI30yvGMcCakOQml-XyzkOZYZbki2Xwz9sruMN-8TLImvy8zl450NiD4yE9gLGFh9xLBBBo77Nl_wJND4jAMR03iuBNHe5M6F1apto40JD0RYDuoQHnKudzIcF5Hv5gPxbx27QxkdLDS3Yv77SsQoktIE_Dxw-ED30-j0U46ojAwu1ERl"/>
+<span class="absolute bottom-0 right-0 bg-surface-container-highest text-[9px] font-mono px-1 text-on-surface-variant">LUM-02</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-body-md font-bold text-on-surface truncate">Nordic Wool Desk Mat</h3>
+<button class="text-outline hover:text-error transition-colors p-0.5" onclick="removeItem(2)" type="button">
+<span class="material-symbols-outlined text-body-md">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Charcoal Anthracite / 900x400mm</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center bg-surface-container">
+<button class="w-6 h-6 flex items-center justify-center text-on-surface hover:bg-surface-bright font-mono" onclick="adjustQty(2, -1)" type="button">-</button>
+<span class="font-mono text-body-sm px-2 text-primary font-bold" id="qty-2">1</span>
+<button class="w-6 h-6 flex items-center justify-center text-on-surface hover:bg-surface-bright font-mono" onclick="adjustQty(2, 1)" type="button">+</button>
+</div>
+<span class="font-mono text-body-md font-bold text-on-surface" id="price-2">$24.50</span>
+</div>
+</div>
+</div>
+<!-- Item 3: FocusPulse Ambient Light Bar -->
+<div class="p-space-sm bg-surface-container-lowest flex gap-space-sm items-start relative group">
+<div class="w-16 h-16 bg-surface-container flex-shrink-0 flex items-center justify-center relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Sleek precision aluminum monitor light bar mounted over an ultra-wide screen casting a warm glare-free amber and cool indigo luminance in an architectural dark room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWVC6nXzK2CWH3nKDFFX3vJiF2d_-vAVO1DLlN0B9lFA20b3vV9pTqI6GUSvd3BJzrej5QdxYhD0RwmxEn9hZH23PGwcAaekQP69I2Bi1V6f39G0V517-2abIX8A5bqNoTnzjaRTPjLsfjp8CgH4ZgPbqcBNXBITaxaHHyNYmDw5kEhFvn8-4hT0omdJSvK0bk-JacFL0_bKKBXi6IyGAao_0yToCYrLYJme7PSbh2a73sx7fsXgWK"/>
+<span class="absolute bottom-0 right-0 bg-surface-container-highest text-[9px] font-mono px-1 text-on-surface-variant">LUM-03</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-body-md font-bold text-on-surface truncate">FocusPulse Ambient Light Bar</h3>
+<button class="text-outline hover:text-error transition-colors p-0.5" onclick="removeItem(3)" type="button">
+<span class="material-symbols-outlined text-body-md">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Anodized Space Black / Wireless Puck</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center bg-surface-container">
+<button class="w-6 h-6 flex items-center justify-center text-on-surface hover:bg-surface-bright font-mono" onclick="adjustQty(3, -1)" type="button">-</button>
+<span class="font-mono text-body-sm px-2 text-primary font-bold" id="qty-3">1</span>
+<button class="w-6 h-6 flex items-center justify-center text-on-surface hover:bg-surface-bright font-mono" onclick="adjustQty(3, 1)" type="button">+</button>
+</div>
+<span class="font-mono text-body-md font-bold text-on-surface" id="price-3">$49.99</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Financial Telemetry Breakdown -->
+<div class="space-y-space-xs pt-space-md bg-surface-container-lowest p-space-md font-mono text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md uppercase tracking-wider">Subtotal:</span>
+<span class="text-on-surface font-bold" id="display-subtotal">$204.48</span>
+</div>
+<div class="flex justify-between text-secondary" id="row-discount">
+<span class="font-label-md text-label-md uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm">percent</span> Student (CAMPUS25):
+              </span>
+<span class="font-bold" id="display-discount">-$51.12</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md uppercase tracking-wider">Locker Delivery:</span>
+<span class="text-secondary font-bold" id="display-shipping">FREE</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md uppercase tracking-wider">Estimated Tax (7%):</span>
+<span class="text-on-surface font-bold" id="display-tax">$10.73</span>
+</div>
+<!-- Grand Total Highlight Bar -->
+<div class="pt-space-sm mt-space-sm bg-surface-container p-space-sm flex justify-between items-center">
+<div>
+<span class="font-headline-md text-title-md text-on-surface uppercase font-bold block">Grand Total</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Net Payable USD</span>
+</div>
+<div class="text-right">
+<span class="font-headline-lg text-headline-md font-bold text-primary" id="display-grand-total">$164.09</span>
+</div>
+</div>
+</div>
+<!-- Primary CTA Button -->
+<div class="mt-space-md space-y-space-sm">
+<button class="w-full py-space-md bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container font-headline-md text-title-md uppercase font-bold tracking-wider shadow-lg transition-all duration-150 flex items-center justify-center gap-space-sm" id="submit-btn" onclick="triggerOrderCompletion()" type="button">
+<span class="material-symbols-outlined text-title-lg">lock</span>
+<span id="btn-total-label">Complete Order ($164.09)</span>
+</button>
+<!-- Trust and Security Badges -->
+<div class="grid grid-cols-2 gap-space-xs text-center pt-space-xs">
+<div class="p-2 bg-surface-container flex items-center justify-center gap-1 text-[11px] font-label-sm uppercase text-outline">
+<span class="material-symbols-outlined text-body-md text-secondary">security</span>
+<span>256-Bit Encrypted</span>
+</div>
+<div class="p-2 bg-surface-container flex items-center justify-center gap-1 text-[11px] font-label-sm uppercase text-outline">
+<span class="material-symbols-outlined text-body-md text-primary">published_with_changes</span>
+<span>30-Day Guarantee</span>
+</div>
+</div>
+<!-- Delivery Guarantee Notification -->
+<div class="p-space-sm bg-secondary/10 flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-title-md mt-0.5">local_shipping</span>
+<div class="text-body-sm font-body-sm text-on-surface">
+<span class="font-bold text-secondary">Campus Priority Dispatch:</span> Orders finalized before 17:00 EST arrive at student mailboxes by 09:30 AM tomorrow.
+              </div>
+</div>
+</div>
+</div>
+<!-- Technical Telemetry Spec Mini-Card -->
+<div class="bg-surface-container-low p-space-md flex items-center justify-between text-outline font-mono text-label-sm">
+<span>HOST: node-east.lumina.internal</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> 99.98% LATENCY 14ms</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Order Simulation Success Overlay Modal -->
+<div class="fixed inset-0 z-50 bg-background/90 backdrop-blur-md hidden flex items-center justify-center p-space-md" id="success-modal">
+<div class="max-w-md w-full bg-surface-container-low p-space-lg shadow-2xl relative text-center space-y-space-md">
+<div class="w-16 h-16 bg-secondary text-on-secondary mx-auto flex items-center justify-center">
+<span class="material-symbols-outlined text-headline-lg">verified</span>
+</div>
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-widest block">TELEMETRY RECEIVED</span>
+<h3 class="font-headline-lg text-headline-md text-on-surface font-bold uppercase">Order #LMN-83021 Dispatched</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">A receipt manifest has been routed to <strong class="text-on-surface font-mono">alex.chen@polytechnic.edu</strong> with immediate locker access credentials.</p>
+</div>
+<div class="p-space-md bg-surface-container-lowest text-left font-mono text-body-sm space-y-1">
+<div class="flex justify-between text-on-surface-variant"><span>Campus Pickup Code:</span><span class="text-secondary font-bold tracking-widest">782-991</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>Settlement Transferred:</span><span class="text-primary font-bold" id="modal-final-paid">$164.09</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>Destination Node:</span><span class="text-on-surface truncate">West Quad Tower 3, #408</span></div>
+</div>
+<div class="pt-space-xs flex gap-space-sm">
+<a class="flex-1 py-space-sm bg-primary text-on-primary font-headline-md text-label-md uppercase font-bold text-center hover:bg-primary-container transition-colors" href="#">Download Spec Manifest</a>
+<button class="px-space-md py-space-sm bg-surface-container text-on-surface font-headline-md text-label-md uppercase font-bold hover:bg-surface-bright transition-colors" onclick="document.getElementById('success-modal').classList.add('hidden')" type="button">Close</button>
+</div>
+</div>
+</div>
+<!-- Real-Time Dynamic Logic Engine Script -->
+<script>
+    const items = [
+      { id: 1, name: "Aura Pro ANC Headphones", basePrice: 129.99, qty: 1 },
+      { id: 2, name: "Nordic Wool Desk Mat", basePrice: 24.50, qty: 1 },
+      { id: 3, name: "FocusPulse Ambient Light Bar", basePrice: 49.99, qty: 1 }
+    ];
+
+    let shippingCost = 0.00;
+    let promoDiscountRate = 0.25; // 25% via CAMPUS25
+    let isPromoApplied = true;
+
+    function recalculateManifest() {
+      let subtotal = 0;
+      let totalCount = 0;
+
+      items.forEach(item => {
+        subtotal += item.basePrice * item.qty;
+        totalCount += item.qty;
+      });
+
+      const discount = isPromoApplied ? subtotal * promoDiscountRate : 0.00;
+      const discountedSubtotal = Math.max(0, subtotal - discount);
+      const tax = discountedSubtotal * 0.07; // 7% state tech tax
+      const grandTotal = discountedSubtotal + tax + shippingCost;
+
+      // Update DOM
+      document.getElementById('display-subtotal').textContent = `$${subtotal.toFixed(2)}`;
+      
+      const discountRow = document.getElementById('row-discount');
+      if (isPromoApplied) {
+        discountRow.classList.remove('hidden');
+        document.getElementById('display-discount').textContent = `-$${discount.toFixed(2)}`;
+      } else {
+        discountRow.classList.add('hidden');
+      }
+
+      document.getElementById('display-shipping').textContent = shippingCost === 0 ? "FREE" : `$${shippingCost.toFixed(2)}`;
+      document.getElementById('display-tax').textContent = `$${tax.toFixed(2)}`;
+      document.getElementById('display-grand-total').textContent = `$${grandTotal.toFixed(2)}`;
+      document.getElementById('btn-total-label').textContent = `Complete Order ($${grandTotal.toFixed(2)})`;
+      document.getElementById('modal-final-paid').textContent = `$${grandTotal.toFixed(2)}`;
+      document.getElementById('summary-item-count').textContent = `${totalCount} ACTIVE ITEM${totalCount === 1 ? '' : 'S'}`;
+    }
+
+    function adjustQty(itemId, delta) {
+      const item = items.find(i => i.id === itemId);
+      if (!item) return;
+
+      item.qty = Math.max(1, item.qty + delta);
+      document.getElementById(`qty-${itemId}`).textContent = item.qty;
+      document.getElementById(`price-${itemId}`).textContent = `$${(item.basePrice * item.qty).toFixed(2)}`;
+      recalculateManifest();
+    }
+
+    function removeItem(itemId) {
+      const itemIndex = items.findIndex(i => i.id === itemId);
+      if (itemIndex > -1) {
+        // Find visual card and fade it out
+        const el = document.getElementById(`qty-${itemId}`).closest('.group');
+        el.style.opacity = '0.3';
+        el.style.pointerEvents = 'none';
+        items[itemIndex].qty = 0;
+        recalculateManifest();
+      }
+    }
+
+    function updateShipping(cost) {
+      shippingCost = parseFloat(cost);
+      recalculateManifest();
+    }
+
+    function applyPromoCode() {
+      const input = document.getElementById('promo-input').value.trim().toUpperCase();
+      if (input === 'CAMPUS25') {
+        isPromoApplied = true;
+        promoDiscountRate = 0.25;
+        document.getElementById('promo-badge').classList.remove('hidden');
+      } else if (input === 'EXTRA10') {
+        isPromoApplied = true;
+        promoDiscountRate = 0.10;
+        document.getElementById('promo-badge').classList.remove('hidden');
+      } else {
+        alert('Invalid authentication voucher code. Try "CAMPUS25"');
+        return;
+      }
+      recalculateManifest();
+    }
+
+    function removePromoCode() {
+      isPromoApplied = false;
+      document.getElementById('promo-badge').classList.add('hidden');
+      recalculateManifest();
+    }
+
+    function toggleStudentIdInput() {
+      const toggle = document.getElementById('student-toggle');
+      const container = document.getElementById('student-id-field');
+      if (toggle.checked) {
+        container.classList.remove('hidden');
+        isPromoApplied = true;
+        document.getElementById('promo-badge').classList.remove('hidden');
+      } else {
+        container.classList.add('hidden');
+        isPromoApplied = false;
+        document.getElementById('promo-badge').classList.add('hidden');
+      }
+      recalculateManifest();
+    }
+
+    function setPaymentTab(tab) {
+      const tabs = ['card', 'apple', 'paypal', 'cash'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tab-${t}`);
+        if (t === tab) {
+          btn.className = "py-space-xs px-space-sm font-label-md text-label-md uppercase font-bold bg-primary text-on-primary flex items-center justify-center gap-1 transition-colors";
+        } else {
+          btn.className = "py-space-xs px-space-sm font-label-md text-label-md uppercase font-bold bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1 transition-colors";
+        }
+      });
+
+      const cardPanel = document.getElementById('payment-card-panel');
+      const altPanel = document.getElementById('payment-alt-panel');
+      const altTitle = document.getElementById('alt-tab-title');
+      const altDesc = document.getElementById('alt-tab-desc');
+
+      if (tab === 'card') {
+        cardPanel.classList.remove('hidden');
+        altPanel.classList.add('hidden');
+      } else {
+        cardPanel.classList.add('hidden');
+        altPanel.classList.remove('hidden');
+        if (tab === 'apple') {
+          altTitle.textContent = "Apple Pay Seamless Dispatch";
+          altDesc.textContent = "Complete authorization instantly via TouchID, FaceID, or your registered Apple Wallet keypair.";
+        } else if (tab === 'paypal') {
+          altTitle.textContent = "PayPal Direct Gateway";
+          altDesc.textContent = "You will be transferred to a 256-bit encrypted sandbox window to finalize institutional checkout.";
+        } else if (tab === 'cash') {
+          altTitle.textContent = "Campus Locker Cash on Delivery";
+          altDesc.textContent = "Deliver tender directly to the campus hub concierge desk during package retrieval. Valid student photo ID required.";
+        }
+      }
+    }
+
+    function formatCardNumber(input) {
+      let val = input.value.replace(/\\D/g, '').substring(0, 16);
+      let sections = [];
+      for (let i = 0; i < val.length; i += 4) {
+        sections.push(val.substring(i, i + 4));
+      }
+      input.value = sections.join(' ');
+      document.getElementById('preview-card-num').textContent = input.value || "•••• •••• •••• ••••";
+    }
+
+    function formatExpiry(input) {
+      let val = input.value.replace(/\\D/g, '').substring(0, 4);
+      if (val.length >= 3) {
+        input.value = val.substring(0, 2) + '/' + val.substring(2, 4);
+      } else {
+        input.value = val;
+      }
+      document.getElementById('preview-card-exp').textContent = input.value || "MM/YY";
+    }
+
+    function autofillShipping() {
+      document.getElementById('ship-name').value = "Jordan Taylor";
+      document.getElementById('preview-card-name').textContent = "JORDAN TAYLOR";
+      document.getElementById('ship-address').value = "100 Memorial Drive";
+      document.getElementById('ship-suite').value = "Ames Hall Room #312";
+      document.getElementById('ship-city').value = "Cambridge";
+      document.getElementById('ship-state').value = "MA";
+      document.getElementById('ship-zip').value = "02142";
+      document.getElementById('checkout-email').value = "jtaylor@alum.mit.edu";
+    }
+
+    function triggerOrderCompletion() {
+      const btn = document.getElementById('submit-btn');
+      const originalText = document.getElementById('btn-total-label').textContent;
+      
+      btn.disabled = true;
+      btn.classList.add('opacity-80', 'cursor-not-allowed');
+      document.getElementById('btn-total-label').textContent = "Processing Encrypted Hash...";
+
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.classList.remove('opacity-80', 'cursor-not-allowed');
+        document.getElementById('btn-total-label').textContent = originalText;
+        document.getElementById('success-modal').classList.remove('hidden');
+      }, 950);
+    }
+
+    // Initialize math on load
+    recalculateManifest();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant mt-space-xl"><div class="max-w-7xl mx-auto px-margin-lg py-space-xl grid grid-cols-1 md:grid-cols-4 gap-gutter-lg"><div class="space-y-space-sm"><div class="flex items-center gap-space-xs"><img alt="Lumina Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXXGLmF4P1YRWe03_TzqMQgufAhUXdU1dpBA6fosYy0-psrps_7AGAAkh_KC7TbzrCW_y8DexQc9pAGcf2C4gEMig_B0kry63-As0h7WK2TKxtVw_7p2odRTZe2eIsbhtYIKyxG6WTG9_T66PvWxQk12Pu3kd-ryElyYJ1O9XdTB40E3T0zpG7536AkdHiYESsU3fwZV54XncqIZj86VsHh4TwFsBdCJilcSu3oEtdlBsJsoiarsOnYD4"/><span class="font-headline-md text-title-md text-primary font-bold uppercase">Lumina</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">College Capstone Project demo created with HTML, CSS, JS. Curated experimental technology and hardware catalog.</p><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase font-bold"><span class="w-2 h-2 bg-secondary inline-block"></span> Guaranteed Storefront Protocol</div></div><div class="space-y-space-xs"><span class="font-headline-md text-title-md text-on-surface uppercase font-bold block mb-space-sm">Directory</span><a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Hardware Depot</a><a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Modular Terminals</a><a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Spec Sheets</a><a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Order Tracking</a></div><div class="space-y-space-xs"><span class="font-headline-md text-title-md text-on-surface uppercase font-bold block mb-space-sm">Support & Trust</span><p class="font-body-sm text-body-sm text-on-surface-variant">24/7 Technical Dispatch Available</p><p class="font-body-sm text-body-sm text-on-surface-variant">30-Day Physical Diagnostic Guarantee</p><p class="font-body-sm text-body-sm text-on-surface-variant">Encrypted Checkout Terminal</p></div><div class="space-y-space-sm"><span class="font-headline-md text-title-md text-on-surface uppercase font-bold block">Telemetry Digest</span><p class="font-body-sm text-body-sm text-on-surface-variant">Subscribe for lab drop updates and release frequencies.</p><div class="flex"><input class="w-full bg-surface-container border border-outline-variant px-space-xs py-space-xs font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="student@college.edu" type="email"/><button class="bg-primary text-on-primary font-label-md text-label-md px-space-sm uppercase font-bold hover:bg-primary-container transition-colors" type="button">JOIN</button></div></div></div><div class="border-t border-outline-variant/50 max-w-7xl mx-auto px-margin-lg py-space-md flex flex-col md:flex-row items-center justify-between gap-space-md"><span class="font-body-sm text-body-sm text-outline">© 2025 Lumina Goods Capstone Architecture. Laboratory Sandbox Mode.</span><div class="flex items-center gap-space-xs"><span class="px-2 py-0.5 border border-outline-variant text-[10px] font-mono text-on-surface-variant">VISA</span><span class="px-2 py-0.5 border border-outline-variant text-[10px] font-mono text-on-surface-variant">MASTERCARD</span><span class="px-2 py-0.5 border border-outline-variant text-[10px] font-mono text-on-surface-variant">APPLE PAY</span><span class="px-2 py-0.5 border border-outline-variant text-[10px] font-mono text-on-surface-variant">PAYPAL</span></div></div></footer></body></html>

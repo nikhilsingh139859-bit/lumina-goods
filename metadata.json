@@ -1,0 +1,6 @@
+{
+  "name": "Lumina Goods",
+  "description": "High-performance curated tech equipment, campus hardware catalog, and modular workspace shop with real-time checkout and telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
